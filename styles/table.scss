@@ -1,0 +1,35 @@
+$table-border-color: #ccc;
+$table-bg: white;
+$sticky-bg: #f9f9f9;
+$header-bg: #f0f0f0;
+$cell-padding: 8px 12px;
+
+.table-container {
+  overflow-x: auto;
+  width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  min-width: 600px;
+
+  th, td {
+    border: 1px solid $table-border-color;
+    padding: $cell-padding;
+    white-space: nowrap;
+    background: $table-bg;
+  }
+
+  thead {
+    background: $header-bg;
+  }
+
+  // Sticky first column
+  td:first-child,
+  th:first-child {
+    position: sticky;
+    left: 0;
+    background: $sticky-bg;
+    z-index: 1;
+  }
+}
