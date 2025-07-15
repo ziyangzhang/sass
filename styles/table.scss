@@ -6,12 +6,12 @@ $cell-padding: 8px 12px;
 
 .table-container {
   overflow-x: auto;
-  width: 100%;
+  width: 100%; // the percentge of the width of the parent (body)
 }
 
 table {
   border-collapse: collapse;
-  min-width: 600px;
+  min-width: 600px; // the min width of the table
 
   th, td {
     border: 1px solid $table-border-color;
